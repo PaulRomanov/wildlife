@@ -1,3 +1,63 @@
-body {
+/* body, .hero {
     max-width: 1440px;
+} */
+
+body {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.2;
+    color: black;
+    
+}
+
+/* 1. Блок Header style */
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; */
+}
+
+.header_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.header_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header_item {
+    margin-left: 61px;
+}
+
+.header_link {
+    font-size: 23px;
+    line-height: 60px;
+    color: #F7F7F7;
+    text-decoration: none;
+}
+
+.header_link:hover,
+.header_link:focus,
+.header_link:active {}
+
+/* 2. Блок Survival style */
+
+.hero {
+    height: 100vh;
+    background: url(./assets/images/img_header.jpg) no-repeat center;
+    background-size: cover;
 }
