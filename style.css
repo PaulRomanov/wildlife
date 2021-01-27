@@ -1,3 +1,22 @@
+/* roboto-regular - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('./assets/fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('./assets/fonts/roboto-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* open-sans-regular - latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('./assets/fonts/open-sans-v18-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('./assets/fonts/open-sans-v18-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
 /* body, .hero {
     max-width: 1440px;
 } */
@@ -9,13 +28,30 @@ body {
     font-size: 18px;
     line-height: 1.2;
     color: black;
-    
+    max-width: 1440px;
+
 }
 
 /* 1. Блок Header style */
+.header_logo_text {
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 60px;
+    color: #F7F7F7;
+    margin-left: 15px;
+}
+.header_logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+}
 .wrapper {
     max-width: 1200px;
-    margin: 0 auto;
+    margin-left: 120px;
 }
 
 .header {
@@ -31,16 +67,19 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding-top: 20px;
+    
+    
 }
 
 .header_list {
     display: flex;
     flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: flex-end;
 }
 
 .header_item {
-    margin-left: 61px;
+    margin: 0 0 10px 65px;
 }
 
 .header_link {
@@ -48,11 +87,35 @@ body {
     line-height: 60px;
     color: #F7F7F7;
     text-decoration: none;
+
+}
+/* .header_link:last-child {
+    padding-top: 100px;
+} */
+
+.header_item:last-child {
+    border: 2px solid #CD6326;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 120px;
+    height: 50px;
+    padding: 0 0 0 23px;
+    margin-top: 5px;
+    
 }
 
-.header_link:hover,
-.header_link:focus,
-.header_link:active {}
+.header_item:hover {
+    background: #CD6326;
+    border: 2px solid #CD6326;
+    box-sizing: border-box;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header_item:active {
+    background: #8F5613;
+    border: 2px solid #8F5613;
+}
 
 /* 2. Блок Survival style */
 
