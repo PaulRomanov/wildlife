@@ -124,9 +124,7 @@ body {
 
 .hero {
     height: 780px;
-    /* min-height: 100vh; */
     background: url(./assets/images/img_header.jpg) no-repeat center;
-    /* background-size:auto; */
 }
 
 .survival {
@@ -301,58 +299,59 @@ body {
     background-image: url(./assets/icons/Vector_right.svg);
     Width: 29px;
     Height: 38px;
-
 }
 
-/* .slider__control {
-    position: absolute;
-    top: 50%;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    color: #fff;
+/* 4. Блок Get notified */
+.get_notified {
+    margin-top: 235px;
+}
+
+.get_notified_h3 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 40px;
     text-align: center;
-    opacity: 0.5;
-    height: 50px;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, .5);
-} */
-
-/* .slider__control_show {
-    display: flex;
+    color: #333333;
+    margin-bottom: 59px;
 }
 
-.slider__control:hover,
-.slider__control:focus {
-    color: #fff;
-    text-decoration: none;
-    outline: 0;
-    opacity: .9;
+.get_notified_input {
+    position: absolute;
+    width: 535px;
+    height: 58px;
+    font-size: 24px;
+    background: #CCCCCC;
+    padding-left: 16px;
+    margin-left: 388px;
 }
 
-.slider__control_left {
-    left: 0;
+.get_notified_button {
+    position: absolute;
+    width: 120px;
+    height: 64px;
+    background: #CD6326;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: 930px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 0px;
+    text-align: center;
+    color: #F7F7F7;
 }
 
-.slider__control_right {
-    right: 0;
+
+.get_notified_button:hover {
+    background: #E39128;
+    border: 2px solid #E39128;
+    cursor: pointer;
 }
 
-.slider__control::before {
-    content: '';
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background: transparent no-repeat center center;
-    background-size: 100% 100%;
+.get_notified_button:active {
+    background: #8F5613;
+    border: 2px solid #8F5613;
 }
-
-.slider__control_left::before {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
-}
-
-.slider__control_right::before {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
-} */
-*/
