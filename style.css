@@ -38,7 +38,6 @@ body {
 
 /* 1. Блок Header style */
 .header_logo_text {
-
     font-family: 'Roboto';
     font-style: normal;
     font-weight: normal;
@@ -66,7 +65,6 @@ body {
 }
 
 .header {
-
     top: 0;
     left: 0;
     width: 100%;
@@ -352,6 +350,76 @@ body {
 }
 
 .get_notified_button:active {
+    background: #8F5613;
+    border: 2px solid #8F5613;
+}
+
+/* 5. Блок Footer */
+
+footer {
+    height: 360px;
+    border-radius: 0px;
+    background: url(./assets/images/footerImg.png) no-repeat center;
+}
+
+.footer_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin-left: 120px;
+}
+
+.footer_logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_logo_text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 60px;
+    color: #F7F7F7;
+    margin-left: 16px;
+    margin-top: 11px;
+}
+
+.footer_list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: flex-end;
+}
+
+
+
+.footer_item {
+    margin: 3px 0 10px 65px;
+}
+
+.footer_link {
+    font-size: 23px;
+    line-height: 60px;
+    color: #F7F7F7;
+    text-decoration: none;
+}
+
+
+
+.footer_item:hover {
+    background: #CD6326;
+    border: 2px solid #CD6326;
+    box-sizing: border-box;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer_item:active {
     background: #8F5613;
     border: 2px solid #8F5613;
 }
