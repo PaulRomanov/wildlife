@@ -37,6 +37,11 @@ body {
 }
 
 /* 1. Блок Header style */
+.hero {
+    height: 780px;
+    background: url(./assets/images/img_header.jpg) no-repeat center;
+}
+
 .header_logo_text {
     font-family: 'Roboto';
     font-style: normal;
@@ -45,7 +50,7 @@ body {
     line-height: 60px;
     color: #F7F7F7;
     margin-left: 16px;
-    margin-top: 11px;
+    margin-top: 12px;
 }
 
 .header_logo {
@@ -119,10 +124,7 @@ body {
 
 /* 2. Блок Survival style */
 
-.hero {
-    height: 780px;
-    background: url(./assets/images/img_header.jpg) no-repeat center;
-}
+
 
 .survival {
     padding-top: 52px;
@@ -136,7 +138,7 @@ body {
     line-height: 72px;
     letter-spacing: 2px;
     color: #CD6326;
-    margin-top: 41px;
+    margin-top: 39px;
 }
 
 .survival_subtitle {
@@ -148,7 +150,7 @@ body {
     font-size: 18px;
     line-height: 27px;
     color: #F7F7F7;
-    margin-top: 49px;
+    margin-top: 52px;
 }
 
 .button_donate {
@@ -174,6 +176,8 @@ body {
     background: #8F5613;
     border: 2px solid #8F5613;
 }
+
+
 
 /* 3. Блок Latest articles */
 
@@ -254,7 +258,7 @@ body {
     line-height: 36px;
     text-align: center;
     color: #F7F7F7;
-    margin: -117px 0 0 124px;
+    margin: -115px 0 0 123px;
 }
 
 .slider_img_text_heading_2 {
@@ -282,7 +286,7 @@ body {
     line-height: 27px;
     text-align: center;
     color: #F7F7F7;
-    margin: -72px 0 0 58px;
+    margin: -69px 0 0 58px;
 }
 
 .slider__control_left {
@@ -300,6 +304,7 @@ body {
 
 /* 4. Блок Get notified */
 .get_notified {
+    /* display: flex; */
     margin-top: 235px;
 }
 
@@ -311,7 +316,7 @@ body {
     line-height: 40px;
     text-align: center;
     color: #333333;
-    margin-bottom: 59px;
+    margin-bottom: 62px;
 }
 
 .get_notified_input {
@@ -364,7 +369,7 @@ footer {
 .footer_wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     max-width: 1200px;
     margin-left: 120px;
@@ -390,7 +395,19 @@ footer {
     line-height: 60px;
     color: #F7F7F7;
     margin-left: 16px;
-    margin-top: 11px;
+    margin-top: 23px;
+}
+
+.footer_logo_text_link,
+.header_logo_text_link {
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 60px;
+    color: #F7F7F7;
+
 }
 
 .footer_list {
@@ -398,10 +415,13 @@ footer {
     flex-wrap: wrap;
     list-style-type: none;
     justify-content: flex-end;
+    padding: 0;
+    margin-left: 74px;
+    margin-top: 14px;
 }
 
 .footer_item {
-    margin: 3px 0 10px 65px;
+    margin: 5px 23px 5px 65px;
 }
 
 .footer_link {
@@ -411,8 +431,6 @@ footer {
     text-decoration: none;
 }
 
-
-
 .footer_item:hover {
     background: #CD6326;
     border-radius: 5px;
@@ -421,5 +439,50 @@ footer {
 
 .footer_item:active {
     background: #8F5613;
+}
 
+.social_network {
+    display: flex;
+    margin: 0px 0 0 76px;
+}
+
+.footer_social_network {
+    margin-left: 26px;
+}
+
+/* АНИМАЦИЯ ДЛЯ КНОПОК СОЦСЕТЕЙ */
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    60%,
+    100% {
+        transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+
+    80% {
+        transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+.footer_social_network:hover {
+    animation: bounce 1s;
+}
+
+/* АНИМАЦИЯ ДЛЯ ЛОГОТИПА и кнопок слайдера */
+.header_logo_img:hover,
+.footer_logo_text:hover,
+.header_logo_text:hover,
+.slider__control:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
 }
