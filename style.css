@@ -105,26 +105,44 @@ body {
 }
 
 .header_item:last-child {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    text-align: center;
     border: 2px solid #CD6326;
     box-sizing: border-box;
     border-radius: 5px;
     width: 120px;
     height: 50px;
-    padding: 0px 0 5px 23px;
+    padding: 6px 0 5px 23px;
+    margin-top: 7px;
 }
 
-.header_item:hover {
+.header_item:last-child:hover {
     background: #CD6326;
     border-radius: 5px;
 }
 
-.header_item:active {
+.header_item:last-child:active {
     background: #8F5613;
 }
 
+.header_link_a:hover,
+.header_nav_img:hover {
+    color: #CD6326;
+    cursor: pointer;
+}
+
+.header_link_a:active,
+.header_nav_img:active {
+    color: #8F5613;
+}
+
 /* 2. Блок Survival style */
-
-
 
 .survival {
     padding-top: 52px;
@@ -316,7 +334,7 @@ body {
     line-height: 40px;
     text-align: center;
     color: #333333;
-    margin-bottom: 62px;
+    margin-bottom: 59px;
 }
 
 .get_notified_input {
@@ -340,7 +358,7 @@ body {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: normal;
-    font-size: 27px;
+    font-size: 25px;
     line-height: 0px;
     text-align: center;
     color: #F7F7F7;
@@ -431,14 +449,13 @@ footer {
     text-decoration: none;
 }
 
-.footer_item:hover {
-    background: #CD6326;
-    border-radius: 5px;
+.footer_link:hover {
+    color: #CD6326;
     cursor: pointer;
 }
 
-.footer_item:active {
-    background: #8F5613;
+.footer_link:active {
+    color: #8F5613;
 }
 
 .social_network {
@@ -481,7 +498,9 @@ footer {
 .header_logo_img:hover,
 .footer_logo_text:hover,
 .header_logo_text:hover,
-.slider__control:hover {
+.slider__control:hover,
+.footer_item:hover,
+.header_item_a:hover {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
