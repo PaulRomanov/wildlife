@@ -22,9 +22,12 @@
     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* body, .hero {
+.hero_wrapper,
+.footer_wrapper,
+.main_wrapper {
     max-width: 1440px;
-} */
+    margin: 0 auto;
+}
 
 body {
     font-family: 'Open Sans';
@@ -33,11 +36,17 @@ body {
     font-size: 18px;
     line-height: 1.2;
     color: black;
-    max-width: 1440px;
+    /* max-width: 1440px; */
+    margin: 0 auto;
+    /* выравнивает макет по центру */
 }
 
 /* 1. Блок Header style */
 .hero {
+    background-color: #02160b; 
+}
+
+.hero_wrapper{
     height: 780px;
     background: url(./assets/images/img_header.jpg) no-repeat center;
 }
@@ -200,6 +209,9 @@ body {
 /* 3. Блок Latest articles */
 
 .main {
+    background-color: #cccccc;  
+}
+.main_wrapper {
     height: 1368px;
     left: 0px;
     top: 0px;
@@ -379,6 +391,10 @@ body {
 /* 5. Блок Footer */
 
 footer {
+    background-color: #181617;
+}
+
+.footer_wrapper_back {
     height: 360px;
     border-radius: 0px;
     background: url(./assets/images/footerImg.png) no-repeat center;
@@ -390,7 +406,7 @@ footer {
     /* justify-content: space-between; */
     align-items: center;
     max-width: 1200px;
-    margin-left: 120px;
+    /* margin-left: 120px;*/
     padding-top: 128px;
 }
 
