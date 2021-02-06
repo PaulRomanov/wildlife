@@ -24,9 +24,9 @@ let imgUrl = [];
 imgUrl.push("./assets/images/deer.png");
 imgUrl.push("./assets/images/squirrel.png");
 imgUrl.push("./assets/images/bird.png");
-imgUrl.push("./assets/images/fox.jpg");
-imgUrl.push("./assets/images/bear.jpg");
-imgUrl.push("./assets/images/wolf.jpg");
+imgUrl.push("./assets/images/item4.jpg");
+imgUrl.push("./assets/images/item5.jpg");
+imgUrl.push("./assets/images/item6.jpg");
 
 
 let currentImgIndex = 0;
