@@ -43,10 +43,10 @@ body {
 
 /* 1. Блок Header style */
 .hero {
-    background-color: #02160b; 
+    background-color: #02160b;
 }
 
-.hero_wrapper{
+.hero_wrapper {
     height: 780px;
     background: url(./assets/images/img_header.jpg) no-repeat center;
 }
@@ -209,8 +209,9 @@ body {
 /* 3. Блок Latest articles */
 
 .main {
-    background-color: #cccccc;  
+    background-color: #cccccc;
 }
+
 .main_wrapper {
     height: 1368px;
     left: 0px;
@@ -260,7 +261,6 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-
     margin-top: 120px;
 }
 
@@ -274,7 +274,7 @@ body {
     text-align: center;
 }
 
-.slider_img_text {}
+/* .slider_img_text {} */
 
 .slider_img_text_heading_1,
 .slider_img_text_heading_3 {
@@ -324,12 +324,21 @@ body {
     Width: 26px;
     Height: 39px;
     margin-right: 62px;
+    border: 0;
+    background-color: #cccccc;
+}
+
+.slider__control_left:hover,
+.slider__control_right:hover {
+    cursor: pointer;
 }
 
 .slider__control_right {
     background-image: url(./assets/icons/Vector_right.svg);
     Width: 29px;
     Height: 38px;
+    border: 0;
+    background-color: #cccccc;
 }
 
 /* 4. Блок Get notified */
@@ -521,3 +530,8 @@ footer {
     -ms-transform: scale(1.2);
     transform: scale(1.2);
 }
+
+/* .disable {
+    pointer-events: none;
+    /* cursor: default; 
+ } */
