@@ -36,7 +36,6 @@ body {
     font-size: 18px;
     line-height: 1.2;
     color: black;
-    /* max-width: 1440px; */
     margin: 0 auto;
     /* выравнивает макет по центру */
 }
@@ -217,7 +216,6 @@ body {
     left: 0px;
     top: 0px;
     background: #CCCCCC;
-    /* border-radius: 0px; */
     overflow: hidden;
     /*  убирает полосу между блоками */
 }
@@ -412,10 +410,8 @@ footer {
 .footer_wrapper {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
     align-items: center;
     max-width: 1200px;
-    /* margin-left: 120px;*/
     padding-top: 128px;
 }
 
@@ -530,8 +526,3 @@ footer {
     -ms-transform: scale(1.2);
     transform: scale(1.2);
 }
-
-/* .disable {
-    pointer-events: none;
-    /* cursor: default; 
- } */
