@@ -60,6 +60,7 @@ body {
     color: #F7F7F7;
     margin-left: 16px;
     margin-top: 12px;
+    transition: 0.5s;
 }
 
 .header_logo {
@@ -103,7 +104,13 @@ body {
 }
 
 .header_item {
-    margin: 3px 0 10px 65px;
+    margin: 3px 0 10px 64px;
+    transition: 0.5s;
+}
+
+
+.item_search {
+    margin-top: 5px;
 }
 
 .header_link {
@@ -177,7 +184,7 @@ body {
     font-size: 18px;
     line-height: 27px;
     color: #F7F7F7;
-    margin-top: 52px;
+    margin-top: 49px;
 }
 
 .button_donate {
@@ -190,9 +197,13 @@ body {
     text-align: center;
     color: #F7F7F7;
     background: #CD6326;
-    border-radius: 8px;
+    border-radius: 5px;
     margin-top: 30px;
+    transition: 0.5s;
+    outline: 0;
 }
+
+
 
 .button_donate:hover {
     background: #E39128;
@@ -354,7 +365,8 @@ body {
     line-height: 40px;
     text-align: center;
     color: #333333;
-    margin-bottom: 59px;
+    margin-bottom: 57px;
+    padding-top: 3px;
 }
 
 .get_notified_input {
@@ -364,7 +376,7 @@ body {
     font-size: 23px;
     background: #CCCCCC;
     padding-left: 14px;
-    margin-left: 388px;
+    margin-left: 389px;
 
 }
 
@@ -383,8 +395,9 @@ body {
     line-height: 0px;
     text-align: center;
     color: #F7F7F7;
+    transition: 0.5s;
+    outline: 0;
 }
-
 
 .get_notified_button:hover {
     background: #E39128;
@@ -428,6 +441,11 @@ footer {
     align-items: center;
 }
 
+.header_logo_img,
+.header_logo_img {
+    transition: 0.5s;
+}
+
 .footer_logo_text {
     font-family: 'Roboto';
     font-style: normal;
@@ -438,6 +456,7 @@ footer {
     margin-left: 16px;
     margin-top: 23px;
     text-transform: uppercase;
+    transition: 0.5s;
 }
 
 .footer_logo_text_link,
@@ -449,7 +468,6 @@ footer {
     font-size: 32px;
     line-height: 60px;
     color: #F7F7F7;
-
 }
 
 .footer_list {
@@ -464,6 +482,7 @@ footer {
 
 .footer_item {
     margin: 5px 23px 5px 65px;
+    transition: 0.5s;
 }
 
 .footer_link {
@@ -471,6 +490,7 @@ footer {
     line-height: 60px;
     color: #F7F7F7;
     text-decoration: none;
+
 }
 
 .footer_link:hover {
@@ -529,7 +549,6 @@ footer {
     -ms-transform: scale(1.2);
     transform: scale(1.2);
 }
-
 
 #next,
 #prev {
