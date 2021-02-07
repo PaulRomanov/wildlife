@@ -54,6 +54,7 @@ body {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: normal;
+    text-transform: uppercase;
     font-size: 32px;
     line-height: 60px;
     color: #F7F7F7;
@@ -106,7 +107,7 @@ body {
 }
 
 .header_link {
-    font-size: 23px;
+    font-size: 24px;
     line-height: 60px;
     color: #F7F7F7;
     text-decoration: none;
@@ -358,12 +359,13 @@ body {
 
 .get_notified_input {
     position: absolute;
-    width: 535px;
+    width: 522px;
     height: 58px;
-    font-size: 24px;
+    font-size: 23px;
     background: #CCCCCC;
-    padding-left: 16px;
+    padding-left: 14px;
     margin-left: 388px;
+
 }
 
 .get_notified_button {
@@ -435,6 +437,7 @@ footer {
     color: #F7F7F7;
     margin-left: 16px;
     margin-top: 23px;
+    text-transform: uppercase;
 }
 
 .footer_logo_text_link,
@@ -525,4 +528,11 @@ footer {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
+}
+
+
+#next,
+#prev {
+    outline: 0;
+    border: 0;
 }
